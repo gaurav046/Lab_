@@ -1,10 +1,13 @@
 //Q2)WAP using switch case which will display the option of all operators
 import java.util.Scanner;
-class Switches {
+class Switch{
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        //Define Result variable
-        double result;
+        
+        System.out.println("Enter First Number : ");
+        int num1 = sc.nextInt();
+        System.out.println("Enter Second Number : ");
+        int num2 = sc.nextInt();
         //Show The Option 
         System.out.println("Operator Options:");
         System.out.println("1. Addition (+)");
@@ -15,51 +18,33 @@ class Switches {
         System.out.println("6. Logical Operator (&/||/!)");        
         // Enter the Opton 
         System.out.print("Enter your choice : ");
-        int choice = sc.nextInt();
         // Switch Operation
-        switch (choice) {
+         int result = sc.nextInt();
+        switch (result) {
             case 1:
             //Case 1 method for Addition
-            System.out.print("Enter the first number: ");
-            double num1 = sc.nextDouble();
-            System.out.print("Enter the second number: ");
-            double num2 = sc.nextDouble();
             result = num1 + num2;
             System.out.println("Result: " + result);
                 break;
             case 2:
             //Case 2 Method for Subtraction
-            System.out.print("Enter the first number: ");
-            num1 = sc.nextDouble();
-            System.out.print("Enter the second number: ");
-            num2 = sc.nextDouble();
             result = num1 - num2;
             System.out.println("Result: " + result);
                 break;
             case 3:
             //Case 3 Method for Multiplication
-            System.out.print("Enter the first number: ");
-            num1 = sc.nextDouble();
-            System.out.print("Enter the second number: ");
-            num2 = sc.nextDouble();
+
             result = num1 * num2;
             System.out.println("Result: " + result);
                 break;
             case 4:
                 //Case 4 Method for Division
-                System.out.print("Enter the first number: ");
-                num1 = sc.nextDouble();
-                System.out.print("Enter the second number: ");
-                num2 = sc.nextDouble();
                 result = num1 / num2;
                 System.out.println("Result: " + result);
                 break;
             case 5:
                 //Case 5 Method for Comparsion
-                System.out.print("Enter the first number: ");
-                num1 = sc.nextDouble();
-                System.out.print("Enter the second number: ");
-                num2 = sc.nextDouble();
+
                 if(num1>num2){
                     System.out.println("Number 1 is Greater then Number 2"+num1);
                 }
